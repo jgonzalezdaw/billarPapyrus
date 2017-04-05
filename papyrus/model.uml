@@ -1,130 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_6GYIkPk2EeaU_OjzpE56iA" name="RootElement">
-  <packagedElement xmi:type="uml:Class" xmi:id="_8kqI4Pk2EeaU_OjzpE56iA" name="Bola" visibility="protected">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_KAA6wPk3EeaU_OjzpE56iA" name="color" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_PLEDUPk3EeaU_OjzpE56iA" name="numero" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_UfUyQPk3EeaU_OjzpE56iA" name="posicion_x" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_XFlp4Pk3EeaU_OjzpE56iA" name="posicion_y" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZZ5O0Pk3EeaU_OjzpE56iA" name="radio" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_dqVJQPk3EeaU_OjzpE56iA" name="estado" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_mwKsYPk3EeaU_OjzpE56iA" name="tipo" visibility="private" type="_rX9W4Pk3EeaU_OjzpE56iA"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve1pIA8dEeeyzYDLbPjLiw" name="dibujar"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_Z0WQ0A8dEeeyzYDLbPjLiw" name="mover"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_bZlwUA8dEeeyzYDLbPjLiw" name="detectarColision"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_d_T1YA8dEeeyzYDLbPjLiw" name="eliminarBola"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_tDdKAA8dEeeyzYDLbPjLiw" name="detectarTronera"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Enumeration" xmi:id="_rX9W4Pk3EeaU_OjzpE56iA" name="enumTipo" visibility="public">
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2Zhm4Pk3EeaU_OjzpE56iA" name="BLANCA"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_38o_cPk3EeaU_OjzpE56iA" name="NEGRA"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_0NoXEPk3EeaU_OjzpE56iA" name="LISA"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1PDX0Pk3EeaU_OjzpE56iA" name="RAYADA"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Usage" xmi:id="_dbAeYPk4EeaU_OjzpE56iA" name="use" client="_8kqI4Pk2EeaU_OjzpE56iA" supplier="_rX9W4Pk3EeaU_OjzpE56iA"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_xZKxkA8TEeeyzYDLbPjLiw" name="Taco">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_5bIVgg8WEeeyzYDLbPjLiw" name="bola" type="_8kqI4Pk2EeaU_OjzpE56iA" association="_5bHucA8WEeeyzYDLbPjLiw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_wg8MQA8XEeeyzYDLbPjLiw" name="longidud" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="__Y4Q4A8XEeeyzYDLbPjLiw" name="color" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_lTntUA8ZEeeyzYDLbPjLiw" name="fuerza" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Cs1qEA8aEeeyzYDLbPjLiw" name="direccionX" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_FIi3gA8aEeeyzYDLbPjLiw" name="direccionY" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
-    </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_r161UA8cEeeyzYDLbPjLiw" name="dibujar"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_KOUzoA8cEeeyzYDLbPjLiw" name="golpear"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_y1j3EA8TEeeyzYDLbPjLiw" name="Mesa">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_U48mcA8gEeeyzYDLbPjLiw" name="bolas" visibility="private" type="_8kqI4Pk2EeaU_OjzpE56iA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZhHrcA8gEeeyzYDLbPjLiw" value="16"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZhL84A8gEeeyzYDLbPjLiw" value="16"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_I44TIBSMEee-ReC70pyYJQ" name="color" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_mw0MMBSMEee-ReC70pyYJQ" name="anchura" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_vgU6ABSMEee-ReC70pyYJQ" name="altura" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_ZDMo0BSQEee-ReC70pyYJQ" name="dibujar"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_0HnU0A8TEeeyzYDLbPjLiw" name="Tronera">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_U6DMsBSREee-ReC70pyYJQ" name="radio" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb7N4BSVEee-ReC70pyYJQ" name="tipoPosicion" visibility="private"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_La6_0BSREee-ReC70pyYJQ" name="dibujar"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="__KaT4A8TEeeyzYDLbPjLiw" name="Jugador">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_ex2bsg8UEeeyzYDLbPjLiw" name="taco" type="_xZKxkA8TEeeyzYDLbPjLiw" association="_ex10oA8UEeeyzYDLbPjLiw"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_AWWikA8UEeeyzYDLbPjLiw" name="Partida"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_KIDtMA8UEeeyzYDLbPjLiw" name="contiene" memberEnd="_KIGwgA8UEeeyzYDLbPjLiw _KIHXkA8UEeeyzYDLbPjLiw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIFiYA8UEeeyzYDLbPjLiw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KIGJcA8UEeeyzYDLbPjLiw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_KIHXkA8UEeeyzYDLbPjLiw" name="mesa" type="_y1j3EA8TEeeyzYDLbPjLiw" association="_KIDtMA8UEeeyzYDLbPjLiw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_KIGwgA8UEeeyzYDLbPjLiw" name="bola" type="_8kqI4Pk2EeaU_OjzpE56iA" aggregation="shared" association="_KIDtMA8UEeeyzYDLbPjLiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mk78gA8fEeeyzYDLbPjLiw" value="16"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mlA1AA8fEeeyzYDLbPjLiw" value="16"/>
-    </ownedEnd>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_XbMXMA8UEeeyzYDLbPjLiw" name="tiene" visibility="public" memberEnd="_XbM-Qg8UEeeyzYDLbPjLiw _XbOzcA8UEeeyzYDLbPjLiw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XbM-QA8UEeeyzYDLbPjLiw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XbM-QQ8UEeeyzYDLbPjLiw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_XbOzcA8UEeeyzYDLbPjLiw" name="mesa" type="_y1j3EA8TEeeyzYDLbPjLiw" association="_XbMXMA8UEeeyzYDLbPjLiw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_XbM-Qg8UEeeyzYDLbPjLiw" name="tronera" type="_0HnU0A8TEeeyzYDLbPjLiw" aggregation="shared" association="_XbMXMA8UEeeyzYDLbPjLiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jlR5AA8VEeeyzYDLbPjLiw" value="6"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jlkM4A8VEeeyzYDLbPjLiw" value="6"/>
-    </ownedEnd>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_cPqy0A8UEeeyzYDLbPjLiw" name="juegan" memberEnd="_cPrZ4g8UEeeyzYDLbPjLiw _cPrZ4w8UEeeyzYDLbPjLiw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cPrZ4A8UEeeyzYDLbPjLiw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cPrZ4Q8UEeeyzYDLbPjLiw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_cPrZ4w8UEeeyzYDLbPjLiw" name="partida" type="_AWWikA8UEeeyzYDLbPjLiw" association="_cPqy0A8UEeeyzYDLbPjLiw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_cPrZ4g8UEeeyzYDLbPjLiw" name="jugador" type="__KaT4A8TEeeyzYDLbPjLiw" aggregation="shared" association="_cPqy0A8UEeeyzYDLbPjLiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5TbAcA8VEeeyzYDLbPjLiw" value="2"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5TvwkA8VEeeyzYDLbPjLiw" value="2"/>
-    </ownedEnd>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_ex10oA8UEeeyzYDLbPjLiw" name="usa" memberEnd="_ex2bsg8UEeeyzYDLbPjLiw _ex3CwA8UEeeyzYDLbPjLiw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ex2bsA8UEeeyzYDLbPjLiw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ex2bsQ8UEeeyzYDLbPjLiw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_ex3CwA8UEeeyzYDLbPjLiw" name="jugador" type="__KaT4A8TEeeyzYDLbPjLiw" association="_ex10oA8UEeeyzYDLbPjLiw"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_5bHucA8WEeeyzYDLbPjLiw" name="golpea" memberEnd="_5bIVgg8WEeeyzYDLbPjLiw _5bIVgw8WEeeyzYDLbPjLiw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5bIVgA8WEeeyzYDLbPjLiw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5bIVgQ8WEeeyzYDLbPjLiw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_5bIVgw8WEeeyzYDLbPjLiw" name="taco" type="_xZKxkA8TEeeyzYDLbPjLiw" association="_5bHucA8WEeeyzYDLbPjLiw"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Enumeration" xmi:id="_o0I_wBSVEee-ReC70pyYJQ" name="posicionTipo">
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Cic7kBSXEee-ReC70pyYJQ" name="ARRIBA_IZQUIERDA"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EIcB8BSXEee-ReC70pyYJQ" name="ARRIBA_CENTRO"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1gtuIBSXEee-ReC70pyYJQ" name="ARRIBA_DERECHA"/>
-  </packagedElement>
-</uml:Model>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:Codegen="http://www.eclipse.org/papyrus/Codegen/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_6GYIkPk2EeaU_OjzpE56iA" name="billar" URI="">
+    <packagedElement xmi:type="uml:Class" xmi:id="_8kqI4Pk2EeaU_OjzpE56iA" name="Bola" visibility="protected">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KAA6wPk3EeaU_OjzpE56iA" name="color" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PLEDUPk3EeaU_OjzpE56iA" name="numero" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UfUyQPk3EeaU_OjzpE56iA" name="posicion_x" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_XFlp4Pk3EeaU_OjzpE56iA" name="posicion_y" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZZ5O0Pk3EeaU_OjzpE56iA" name="radio" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dqVJQPk3EeaU_OjzpE56iA" name="estado" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mwKsYPk3EeaU_OjzpE56iA" name="tipo" visibility="private" type="_rX9W4Pk3EeaU_OjzpE56iA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve1pIA8dEeeyzYDLbPjLiw" name="dibujar"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Z0WQ0A8dEeeyzYDLbPjLiw" name="mover"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bZlwUA8dEeeyzYDLbPjLiw" name="detectarColision"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_d_T1YA8dEeeyzYDLbPjLiw" name="eliminarBola"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_tDdKAA8dEeeyzYDLbPjLiw" name="detectarTronera"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_rX9W4Pk3EeaU_OjzpE56iA" name="enumTipo" visibility="public">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2Zhm4Pk3EeaU_OjzpE56iA" name="BLANCA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_38o_cPk3EeaU_OjzpE56iA" name="NEGRA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_0NoXEPk3EeaU_OjzpE56iA" name="LISA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1PDX0Pk3EeaU_OjzpE56iA" name="RAYADA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_dbAeYPk4EeaU_OjzpE56iA" name="use" client="_8kqI4Pk2EeaU_OjzpE56iA" supplier="_rX9W4Pk3EeaU_OjzpE56iA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xZKxkA8TEeeyzYDLbPjLiw" name="Taco">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5bIVgg8WEeeyzYDLbPjLiw" name="bola" type="_8kqI4Pk2EeaU_OjzpE56iA" association="_5bHucA8WEeeyzYDLbPjLiw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wg8MQA8XEeeyzYDLbPjLiw" name="longidud" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qLSVcBoSEeeRytq8-Mja5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qLWm4BoSEeeRytq8-Mja5A" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__Y4Q4A8XEeeyzYDLbPjLiw" name="color" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_lTntUA8ZEeeyzYDLbPjLiw" name="fuerza" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Cs1qEA8aEeeyzYDLbPjLiw" name="direccionX" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_FIi3gA8aEeeyzYDLbPjLiw" name="direccionY" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r161UA8cEeeyzYDLbPjLiw" name="dibujar"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_KOUzoA8cEeeyzYDLbPjLiw" name="golpear"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_y1j3EA8TEeeyzYDLbPjLiw" name="Mesa">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_U48mcA8gEeeyzYDLbPjLiw" name="bolas" visibility="private" type="_8kqI4Pk2EeaU_OjzpE56iA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZhHrcA8gEeeyzYDLbPjLiw" value="16"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZhL84A8gEeeyzYDLbPjLiw" value="16"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_I44TIBSMEee-ReC70pyYJQ" name="color" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mw0MMBSMEee-ReC70pyYJQ" name="anchura" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vgU6ABSMEee-ReC70pyYJQ" name="altura" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ZDMo0BSQEee-ReC70pyYJQ" name="dibujar"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0HnU0A8TEeeyzYDLbPjLiw" name="Tronera">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_U6DMsBSREee-ReC70pyYJQ" name="radio" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb7N4BSVEee-ReC70pyYJQ" name="tipoPosicion" visibility="private" type="_o0I_wBSVEee-ReC70pyYJQ"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_La6_0BSREee-ReC70pyYJQ" name="dibujar"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__KaT4A8TEeeyzYDLbPjLiw" name="Jugador">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ex2bsg8UEeeyzYDLbPjLiw" name="taco" type="_xZKxkA8TEeeyzYDLbPjLiw" association="_ex10oA8UEeeyzYDLbPjLiw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_AWWikA8UEeeyzYDLbPjLiw" name="Partida"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KIDtMA8UEeeyzYDLbPjLiw" name="contiene" memberEnd="_KIGwgA8UEeeyzYDLbPjLiw _KIHXkA8UEeeyzYDLbPjLiw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIFiYA8UEeeyzYDLbPjLiw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KIGJcA8UEeeyzYDLbPjLiw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KIHXkA8UEeeyzYDLbPjLiw" name="mesa" type="_y1j3EA8TEeeyzYDLbPjLiw" association="_KIDtMA8UEeeyzYDLbPjLiw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KIGwgA8UEeeyzYDLbPjLiw" name="bola" type="_8kqI4Pk2EeaU_OjzpE56iA" aggregation="shared" association="_KIDtMA8UEeeyzYDLbPjLiw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mk78gA8fEeeyzYDLbPjLiw" value="16"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mlA1AA8fEeeyzYDLbPjLiw" value="16"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XbMXMA8UEeeyzYDLbPjLiw" name="tiene" visibility="public" memberEnd="_XbM-Qg8UEeeyzYDLbPjLiw _XbOzcA8UEeeyzYDLbPjLiw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XbM-QA8UEeeyzYDLbPjLiw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XbM-QQ8UEeeyzYDLbPjLiw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_XbOzcA8UEeeyzYDLbPjLiw" name="mesa" type="_y1j3EA8TEeeyzYDLbPjLiw" association="_XbMXMA8UEeeyzYDLbPjLiw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_XbM-Qg8UEeeyzYDLbPjLiw" name="tronera" type="_0HnU0A8TEeeyzYDLbPjLiw" aggregation="shared" association="_XbMXMA8UEeeyzYDLbPjLiw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jlR5AA8VEeeyzYDLbPjLiw" value="6"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jlkM4A8VEeeyzYDLbPjLiw" value="6"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cPqy0A8UEeeyzYDLbPjLiw" name="juegan" memberEnd="_cPrZ4g8UEeeyzYDLbPjLiw _cPrZ4w8UEeeyzYDLbPjLiw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cPrZ4A8UEeeyzYDLbPjLiw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cPrZ4Q8UEeeyzYDLbPjLiw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_cPrZ4w8UEeeyzYDLbPjLiw" name="partida" type="_AWWikA8UEeeyzYDLbPjLiw" association="_cPqy0A8UEeeyzYDLbPjLiw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_cPrZ4g8UEeeyzYDLbPjLiw" name="jugador" type="__KaT4A8TEeeyzYDLbPjLiw" aggregation="shared" association="_cPqy0A8UEeeyzYDLbPjLiw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5TbAcA8VEeeyzYDLbPjLiw" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5TvwkA8VEeeyzYDLbPjLiw" value="2"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ex10oA8UEeeyzYDLbPjLiw" name="usa" memberEnd="_ex2bsg8UEeeyzYDLbPjLiw _ex3CwA8UEeeyzYDLbPjLiw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ex2bsA8UEeeyzYDLbPjLiw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ex2bsQ8UEeeyzYDLbPjLiw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ex3CwA8UEeeyzYDLbPjLiw" name="jugador" type="__KaT4A8TEeeyzYDLbPjLiw" association="_ex10oA8UEeeyzYDLbPjLiw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5bHucA8WEeeyzYDLbPjLiw" name="golpea" memberEnd="_5bIVgg8WEeeyzYDLbPjLiw _5bIVgw8WEeeyzYDLbPjLiw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5bIVgA8WEeeyzYDLbPjLiw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5bIVgQ8WEeeyzYDLbPjLiw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5bIVgw8WEeeyzYDLbPjLiw" name="taco" type="_xZKxkA8TEeeyzYDLbPjLiw" association="_5bHucA8WEeeyzYDLbPjLiw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_o0I_wBSVEee-ReC70pyYJQ" name="posicionTipo">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Cic7kBSXEee-ReC70pyYJQ" name="ARRIBA_IZQUIERDA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EIcB8BSXEee-ReC70pyYJQ" name="ARRIBA_CENTRO"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1gtuIBSXEee-ReC70pyYJQ" name="ARRIBA_DERECHA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_xTXA0BoREeeRytq8-Mja5A" name="ABAJO_IZQUIERDA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_yXy5UBoREeeRytq8-Mja5A" name="ABAJO_CENTRO"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_z4qPIBoREeeRytq8-Mja5A" name="ABAJO_DERECHA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_-QdwcBoREeeRytq8-Mja5A" client="_0HnU0A8TEeeyzYDLbPjLiw" supplier="_o0I_wBSVEee-ReC70pyYJQ"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iKPXgBoPEeeRytq8-Mja5A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iKTB4BoPEeeRytq8-Mja5A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+  </uml:Model>
+  <Codegen:Project xmi:id="_l6puEBoPEeeRytq8-Mja5A" base_Model="_6GYIkPk2EeaU_OjzpE56iA" projectName="billarPapyrus" sourceFolder="srcGen" prefix="net.iessonferrer.jgonzalez"/>
+</xmi:XMI>
