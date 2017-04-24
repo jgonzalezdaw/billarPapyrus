@@ -5,31 +5,79 @@
 package net.iessonferrer.jgonzalez.billar;
 
 import net.iessonferrer.jgonzalez.billar.Bola;
+import net.iessonferrer.jgonzalez.billar.Tronera;
 
 /************************************************************/
 /**
- * 
+ * Clase que representa la mesa y en la cual podemos definir el color, la altura y la anchura.
+  * Tiene 6 troneras y contiene las 16 bolas que componen el juego.
  */
 public class Mesa {
 	/**
-	 * 
-	 */
-	private Bola[] bolas;
-	/**
-	 * 
+	 * El tapiz puede tener otros colores, además del verde
 	 */
 	private String color;
 	/**
-	 * 
+	 * La anchura (coordenada x) la representamos en píxeles
 	 */
 	private int anchura;
 	/**
-	 * 
+	 * La altura (coordenada y) la representamos en píxeles
 	 */
 	private int altura;
+	/**
+	 * Tenemos 16 bolas en juego: la blanca, la negra, 7 lisas y 7 rayadas.
+	 */
+	private Bola[] bolas;
+	/**
+	 * La mesa tiene seis troneras (agujeros): 
+	  * cuatro en las esquinas y dos en la mitad de los laterales largos.
+	 */
+	public Tronera[] troneras;
 
 	/**
-	 * 
+	 * @param color
+	 * @param anchura
+	 * @param altura
+	 */
+	public Mesa(String color, int anchura, int altura) {
+		super();
+		this.color = color;
+		this.anchura = anchura;
+		this.altura = altura;
+	}
+
+	/**
+	 * @return the color
+	 */
+	public String getColor() {
+		return color;
+	}
+
+	/**
+	 * @param color the color to set
+	 */
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	/**
+	 * @return the anchura
+	 */
+	public int getAnchura() {
+		return anchura;
+	}
+
+	/**
+	 * @return the altura
+	 */
+	public int getAltura() {
+		return altura;
+	}
+
+	/**
+	 * Pinta la mesa en su estado actual, es decir, 
+	  * pinta el tapiz y las bolas en la posición en la que se encuentran.
 	 */
 	public void dibujar() {
 	}

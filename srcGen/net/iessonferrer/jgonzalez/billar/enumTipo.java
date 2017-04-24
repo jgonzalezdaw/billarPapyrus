@@ -10,19 +10,22 @@ package net.iessonferrer.jgonzalez.billar;
  */
 public enum enumTipo {
 	/**
-	 * 
+	 * La bola blanca no pertenece a ningún jugador y no tiene numeración
 	 */
 	BLANCA,
 	/**
-	 * 
+	 * La bola negra es la bola 8.
+	  * Se debe introducir al final de la partida, de lo contrario el jugador pierde
 	 */
 	NEGRA,
 	/**
-	 * 
+	 * Pertenecen a un jugador y están numeradas del 1 al 7.
+	  * Son de un color determinado y con una franja blanca.
 	 */
 	LISA,
 	/**
-	 * 
+	 * Pertenecen al otro jugador y están numeradas del 9 al 16.
+	  * Son totalmente de un color determinado.
 	 */
 	RAYADA;
 };

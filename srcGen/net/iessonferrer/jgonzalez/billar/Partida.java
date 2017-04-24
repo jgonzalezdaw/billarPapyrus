@@ -4,9 +4,20 @@
 
 package net.iessonferrer.jgonzalez.billar;
 
+import net.iessonferrer.jgonzalez.billar.Jugador;
+import net.iessonferrer.jgonzalez.billar.Mesa;
+
 /************************************************************/
 /**
  * 
  */
 public class Partida {
+	/**
+	 * 
+	 */
+	public Mesa mesa;
+	/**
+	 * 
+	 */
+	public Jugador[] jugador;
 };
