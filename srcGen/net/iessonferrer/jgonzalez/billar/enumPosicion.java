@@ -4,25 +4,33 @@
 
 package net.iessonferrer.jgonzalez.billar;
 
-import net.iessonferrer.jgonzalez.billar.enumPosicion;
-
 /************************************************************/
 /**
  * 
  */
-public class Tronera {
+public enum enumPosicion {
 	/**
 	 * 
 	 */
-	private int radio;
+	ARRIBA_IZQUIERDA,
 	/**
 	 * 
 	 */
-	private enumPosicion tipoPosicion;
-
+	ARRIBA_CENTRO,
 	/**
 	 * 
 	 */
-	public void dibujar() {
-	}
+	ARRIBA_DERECHA,
+	/**
+	 * 
+	 */
+	ABAJO_IZQUIERDA,
+	/**
+	 * 
+	 */
+	ABAJO_CENTRO,
+	/**
+	 * 
+	 */
+	ABAJO_DERECHA;
 };

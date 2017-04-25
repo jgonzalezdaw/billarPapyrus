@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:Codegen="http://www.eclipse.org/papyrus/Codegen/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Model xmi:id="_6GYIkPk2EeaU_OjzpE56iA" name="billar" URI="">
-    <packagedElement xmi:type="uml:Class" xmi:id="_8kqI4Pk2EeaU_OjzpE56iA" name="Bola" visibility="protected">
+    <packagedElement xmi:type="uml:Class" xmi:id="_8kqI4Pk2EeaU_OjzpE56iA" name="Bola" visibility="public">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_KAA6wPk3EeaU_OjzpE56iA" name="color" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
@@ -52,13 +52,11 @@ Son totalmente de un color determinado.</body>
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
-    <packagedElement xmi:type="uml:Usage" xmi:id="_dbAeYPk4EeaU_OjzpE56iA" name="use" client="_8kqI4Pk2EeaU_OjzpE56iA" supplier="_rX9W4Pk3EeaU_OjzpE56iA"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_xZKxkA8TEeeyzYDLbPjLiw" name="Taco">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_5bIVgg8WEeeyzYDLbPjLiw" name="bola" type="_8kqI4Pk2EeaU_OjzpE56iA" association="_5bHucA8WEeeyzYDLbPjLiw"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_wg8MQA8XEeeyzYDLbPjLiw" name="longidud" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qLSVcBoSEeeRytq8-Mja5A"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qLWm4BoSEeeRytq8-Mja5A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qLSVcBoSEeeRytq8-Mja5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qLWm4BoSEeeRytq8-Mja5A" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="__Y4Q4A8XEeeyzYDLbPjLiw" name="color" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -161,13 +159,7 @@ pinta el tapiz y las bolas en la posición en la que se encuentran.</body>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_ex3CwA8UEeeyzYDLbPjLiw" name="jugador" type="__KaT4A8TEeeyzYDLbPjLiw" association="_ex10oA8UEeeyzYDLbPjLiw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_5bHucA8WEeeyzYDLbPjLiw" name="golpea" memberEnd="_5bIVgg8WEeeyzYDLbPjLiw _5bIVgw8WEeeyzYDLbPjLiw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5bIVgA8WEeeyzYDLbPjLiw" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5bIVgQ8WEeeyzYDLbPjLiw" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_5bIVgw8WEeeyzYDLbPjLiw" name="taco" type="_xZKxkA8TEeeyzYDLbPjLiw" association="_5bHucA8WEeeyzYDLbPjLiw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_o0I_wBSVEee-ReC70pyYJQ" name="posicionTipo">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_o0I_wBSVEee-ReC70pyYJQ" name="enumPosicion">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Cic7kBSXEee-ReC70pyYJQ" name="ARRIBA_IZQUIERDA"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EIcB8BSXEee-ReC70pyYJQ" name="ARRIBA_CENTRO"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1gtuIBSXEee-ReC70pyYJQ" name="ARRIBA_DERECHA"/>
@@ -175,13 +167,15 @@ pinta el tapiz y las bolas en la posición en la que se encuentran.</body>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_yXy5UBoREeeRytq8-Mja5A" name="ABAJO_CENTRO"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_z4qPIBoREeeRytq8-Mja5A" name="ABAJO_DERECHA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Usage" xmi:id="_-QdwcBoREeeRytq8-Mja5A" client="_0HnU0A8TEeeyzYDLbPjLiw" supplier="_o0I_wBSVEee-ReC70pyYJQ"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_XFXIoCkUEeexU7AXxtY9Vg" name="discurre en" memberEnd="_XFcoMCkUEeexU7AXxtY9Vg _XFedYCkUEeexU7AXxtY9Vg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XFcBICkUEeexU7AXxtY9Vg" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XFcBISkUEeexU7AXxtY9Vg" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_XFedYCkUEeexU7AXxtY9Vg" name="partida" type="_AWWikA8UEeeyzYDLbPjLiw" association="_XFXIoCkUEeexU7AXxtY9Vg"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Bx5z0CmdEeeRY9xQEjxk1g" name="golpea" client="_xZKxkA8TEeeyzYDLbPjLiw" supplier="_8kqI4Pk2EeaU_OjzpE56iA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Est_ICmdEeeRY9xQEjxk1g" name="usaTipo" client="_8kqI4Pk2EeaU_OjzpE56iA" supplier="_rX9W4Pk3EeaU_OjzpE56iA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_I03gQCmdEeeRY9xQEjxk1g" name="usaPosicion" client="_0HnU0A8TEeeyzYDLbPjLiw" supplier="_o0I_wBSVEee-ReC70pyYJQ"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iKPXgBoPEeeRytq8-Mja5A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iKTB4BoPEeeRytq8-Mja5A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>

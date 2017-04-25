@@ -10,7 +10,7 @@ import net.iessonferrer.jgonzalez.billar.enumTipo;
 /**
  * 
  */
-class Bola {
+public class Bola {
 	/**
 	 * 
 	 */

@@ -14,11 +14,7 @@ public class Taco {
 	/**
 	 * 
 	 */
-	public Bola bola;
-	/**
-	 * 
-	 */
-	private int[] longidud;
+	private int longidud;
 	/**
 	 * 
 	 */
